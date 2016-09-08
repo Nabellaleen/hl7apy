@@ -21,14 +21,14 @@
 
 import importlib
 
-from messages import MESSAGES
-from segments import SEGMENTS
-from fields import FIELDS
-from datatypes import DATATYPES
-from groups import GROUPS
-from tables import TABLES
-
+from hl7apy.v2_6.messages import MESSAGES
+from hl7apy.v2_6.segments import SEGMENTS
+from hl7apy.v2_6.fields import FIELDS
+from hl7apy.v2_6.datatypes import DATATYPES
+from hl7apy.v2_6.groups import GROUPS
+from hl7apy.v2_6.tables import TABLES
 from hl7apy.v2_6.base_datatypes import ST
+
 from hl7apy.exceptions import ChildNotFound
 
 ELEMENTS = {'Message': MESSAGES, 'Segment': SEGMENTS, 'Field': FIELDS,
