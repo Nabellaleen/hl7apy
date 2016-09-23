@@ -75,4 +75,5 @@ setup(
               'hl7apy.v2_5', 'hl7apy.v2_5_1', 'hl7apy.v2_6'],
     scripts=['utils/hl7apy_profile_parser'],
     test_suite='tests',
+    install_requires=['six==1.10.0']
 )
