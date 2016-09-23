@@ -23,7 +23,6 @@ import os
 import sys
 import collections
 import importlib
-from six.moves import cPickle
 
 from hl7apy.exceptions import UnsupportedVersion, InvalidEncodingChars, UnknownValidationLevel
 from hl7apy.consts import DEFAULT_ENCODING_CHARS, DEFAULT_VERSION, VALIDATION_LEVEL
@@ -308,6 +307,7 @@ def find_reference(name, element_types, version):
 
 def load_message_profile(path):
     with open(path) as f:
+        from six.moves import cPickle
         mp = cPickle.load(f)
 
     return mp
