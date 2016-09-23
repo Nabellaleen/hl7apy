@@ -24,7 +24,7 @@
 from distutils.core import setup
 from distutils.errors import DistutilsSetupError
 
-import hl7apy
+from hl7apy import __author__, __author_email__, __url__
 
 desc = "HL7apy: a lightweight Python library to parse, create and handle HL7 v2.x messages"
 
@@ -58,9 +58,9 @@ setup(
     version=_get_version(),
     description=desc,
     long_description=long_desc,
-    author=hl7apy.__author__,
-    author_email=hl7apy.__author_email__,
-    url=hl7apy.__url__,
+    author=__author__,
+    author_email=__author_email__,
+    url=__url__,
     download_url='http://sourceforge.net/projects/hl7apy/files/',
     license='MIT License',
     keywords=['HL7', 'Health Level 7', 'healthcare', 'python'],
